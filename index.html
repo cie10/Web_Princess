@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--SEO-->
+    <title>picSTAR</title>
+    <meta name="description" content="내 손안의 전시회">
+    <meta name="author" content="Cielo">
+    <!-- Open Graph Data (OG) -->
+    <!-- 카톡 공유했을 때 나오는 것들 -->
+    <meta property="og:title" content="내 손안의 전시회" />
+    <meta property="og:style" content="website" />
+    <meta property="og:url" content="배포후 생성된 URL" />
+    <meta property="og:image" content="배포후 생성된 이미지 URL" />
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/c1398806a7.js" crossorigin="anonymous"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- JavaScript -->
+    <script type="module" src="src/main.js" defer></script>
+    <script type="module" src="src/pictures.js" defer></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header__logo">
+            <i class="fa-solid fa-star" style="color: #06ebef;" ></i>
+            <!-- <img class="header__logo__img" src="images/star-solid.svg" alt="logo"> -->
+            <!-- 홈으로 이동하기 위해 a태그 사용 -->
+            <h1 class="header__logo_title"><a href="#">picSTAR</a></h1>
+        </div>
+        <!-- 단순 스타일링 목적으로 div 사용 -->
+        <nav class="header__nav">
+            <ul class="header__menu">
+                <li><a class="header__menu__item" href="#home">Home</a></li>
+                <li><a class="header__menu__item" href="#about">About</a></li>
+                <li><a class="header__menu__item" href="#goods">STAR's 굿즈제작</a></li> 
+                <li><a class="header__menu__item" href="#login">Login/Sign in</a></li>
+                <li><a class="header__menu__item" href="#mypage">Mypage</a></li>
+            </ul>
+        </nav>
+        <button class ="header__toggle" aria-label="navigation menu toggle ">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </header>
+    <!-- Main -->
+    <main>
+        <!-- 홈 -->
+        <section id="home">
+            <h2 class="home__title">picSTAR</h2>
+            <p class="home__description">숨겨진 STAR 작가님들의 pic을 나누는 picSTAR 입니다.<br/>
+            <ul class="posters">
+                <li class="poster"><a href="https://projectify.kr/236" target="_blank">
+                    <img src="images/poster/전시회1.jpeg" alt="poster1" class="poster__img">
+                    <div class="poster__metadata">
+                        <h3 class="poster__title">겨울의 뉘앙스</h3>
+                        <p> 작가: 임수진 <br> 장소: 프로젝티파이 <br> 2023.10.31 ~ 2023.11.21</p>
+                    </div>
+                </a></li>
+                <li class="poster"><a href="https://lets-keep-it-fresh-gallery.com/EXHIBITION" target="_blank">
+                    <img src="images/poster/전시회2.png" alt="poster2" class="poster__img">
+                    <div class="poster__metadata">
+                        <h3 class="poster__title">Thrownness</h3>
+                        <p> 작가: 엔오브라 <br> 장소: LKIF GALLERY <br> 2023.10.24 ~ 2023.11.11</p>
+                    </div>
+                </a></li>
+                <li class="poster"><a href="https://artside.org/" target="_blank">
+                    <img src="images/poster/전시회3.webp" alt="poster3" class="poster__img">
+                    <div class="poster__metadata">
+                        <h3 class="poster__metadata__title">Dear Summer</h3>
+                        <p> 작가: 류주영<br> 장소: 아트사이드 갤러리 <br> 2023.10.27 ~ 2023.11.18</p>
+                    </div>
+                </a></li>
+            </ul>
+            <a class="home__contact" onclick= "location.href='picSTAR.html'">Go to picSTAR!</a>
+        </section>
+         <!--picSTAR 소개  -->
+         <section id="about" class="section">
+            <h2 class="title">picSTAR 소개</h2>
+            <p class="description">숨겨진 STAR작가의 Pic과 Story를 공유하는 picSTAR입니다.</p>
+            <p>인스타그램 <a class= "picstar__instagram"href="https://www.instagram.com/picstar_official/" target="_blank" >@picstar_official</a> 통해 다양한 소식을 받아볼 수 있습니다.</p>
+            <p>문의사항은 DM으로 보내주세요.</p>
+         </section>
+        <!--STAR's 굿즈제작 -->
+        <section id="goods" class="section">
+            <h2 class ="title">STAR's 굿즈 제작소</h2>
+            <p class="goods__description">내가 원하는 그림으로 굿즈를 제작할 수 있습니다.</p>
+            <ul class="make__goods">
+                <li class="make__good">
+                    <img src="images/goods/goods1.webp" alt="goods1" class="make_good__img">
+                    <p class="goods__title">마스킹 테이프</p>
+                    <p class="goods__check">3개 이상부터 주문 가능</p>
+                    <p class="goods__price">2,000원</p>
+                </li>
+                <li class="make__good">
+                    <img src="images/goods/goods2.webp" alt="goods2" class="make_good__img">
+                    <p class="goods__title">달력 110x150</p>
+                    <p class="goods__price">5,000원</p>
+                </li>
+                <li class="make__good">
+                    <img src="images/goods/goods3.webp" alt="goods3" class="make_good__img">
+                    <p class="goods__title">메모장</p>
+                    <p class="goods__check">3개 이상부터 주문 가능</p>
+                    <p class="goods__price">2,000원</p>
+                </li>
+                <li class="make__good">
+                    <img src="images/goods/goods4.webp" alt="goods4" class="make_good__img">
+                    <p class="goods__title">패브릭</p>
+                    <p class="goods__price">8,000원</p>
+                </li>
+                <li class="make__good">
+                    <img src="images/goods/goods5.webp" alt="goods5" class="make_good__img">
+                    <p class="goods__title">달력 230x100</p>
+                    <p class="goods__price">9,000원</p>
+                </li>
+                <li class="make__good">
+                    <img src="images/goods/goods6.webp" alt="goods6" class="make_good__img">
+                    <p class="goods__title">에코백</p>
+                    <p class="goods__price">15,000원</p>
+                </li>
+            </ul>
+            <a class="goods__contact" href="https://docs.google.com/forms/d/e/1FAIpQLSco27fkisQYc9yH98UwiVoxytVsu9mM7vkHBM75omV62Q--SQ/viewform?usp=sf_link">STAR's 굿즈 제작의뢰</a>
+        </section>
+        <!-- 로그인/회원가입 -->
+        <section id="login" class="section" >
+            <div class="form" >
+                <form class="register-form">
+                    <h2 class="title">Sign In</h2>
+                    <input type="text" placeholder="name" />
+                    <input type="password" placeholder="password" />
+                    <input type="text" placeholder="email address" />
+                    <div id="wrapper">
+                        <a class="button" href="#popup2">create</a>
+                    </div>           
+                    <p class ="message">Already registered? <a href="#login" class="Login In">Login In</a></p>
+                </form>
+                <form class="login-form">
+                    <h2 >Login</h2>
+                    <input type="text" placeholder="username" />
+                    <input type="password" placeholder="password" />
+                    <button>login</button>
+                    <p class="message">Not registered? <a href="#login" class="Register">Create an account</a></p>
+                </form>
+            </div>
+            <div id="popup1" class="overlay">
+                <div class="popup">
+                    <h2>Login Success!</h2>
+                    <a class="close" href="#">&times;</a>
+                    <div class="content">
+                        <p>로그인이 완료되었습니다. </p>
+                    </div>
+                </div>
+            </div>
+            
+        <div id="popup2" class="overlay">
+                <div class="popup">
+                    <h2>Sign Up Success!</h2>
+                    <a class="close" href="#">&times;</a>
+                    <div class="content">
+                        <p>회원가입이 완료되었습니다.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 마이페이지 -->
+        <section id="mypage" class="section">
+            <h2 class="title">My page</h2>
+            <ul class="categories">
+                <li><button class = "category" data-category="나의 picSTAR">나의 picSTAR</button></li>
+                <li><button class = "category" data-category="나의 리뷰">나의 리뷰</button></li>
+                <li><button class = "category" data-category="picSTAR 제작의뢰">picSTAR 제작의뢰</button></li>
+            </ul>
+            <ul class = "My_picSTARs">
+                <li class="My_picSTAR"></li>
+            </ul>
+            <p claa="description"></p>
+        </section>
+</body>
+</html>
