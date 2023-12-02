@@ -129,13 +129,14 @@
         <!-- 로그인/회원가입 -->
         <section id="login" class="section" >
             <div class="form" >
-                <form class="register-form">
+                <form class="register-form" method = "post" action = "backend/sign_verify.jsp">
                     <h2 class="title">Sign In</h2>
-                    <input type="text" placeholder="name" />
-                    <input type="password" placeholder="password" />
-                    <input type="text" placeholder="email address" />
+                        <input type="text" name="name" />
+                        <input type="password" name="password" />
+                        <input type="text" name="email address" />
                     <div id="wrapper">
-                        <a class="button" href="#popup2">create</a>
+                        <button type="submit" class="button">create</button>
+                        <!-- <a class="button" href="#popup2">create</a> -->
                     </div>           
                     <p class ="message">Already registered? <a href="#login" class="Login In">Login In</a></p>
                 </form>
